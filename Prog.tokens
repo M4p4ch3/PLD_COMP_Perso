@@ -1,0 +1,4 @@
+Decl=1
+DefFun=2
+'int a;'=1
+'void main(){}'=2
