@@ -1,4 +1,5 @@
 Decl=1
-DefFun=2
-'int a;'=1
-'void main(){}'=2
+Type=2
+Name=3
+DefFun=4
+'void main(){}'=4

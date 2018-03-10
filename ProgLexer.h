@@ -12,7 +12,7 @@
 class  ProgLexer : public antlr4::Lexer {
 public:
   enum {
-    Decl = 1, DefFun = 2
+    Decl = 1, Type = 2, Name = 3, DefFun = 4
   };
 
   ProgLexer(antlr4::CharStream *input);

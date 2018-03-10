@@ -12,7 +12,7 @@
 class  ProgParser : public antlr4::Parser {
 public:
   enum {
-    Decl = 1, DefFun = 2
+    Decl = 1, Type = 2, Name = 3, DefFun = 4
   };
 
   enum {
@@ -35,8 +35,9 @@ public:
   public:
     ProgContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
-    antlr4::tree::TerminalNode *Decl();
     antlr4::tree::TerminalNode *DefFun();
+    std::vector<antlr4::tree::TerminalNode *> Decl();
+    antlr4::tree::TerminalNode* Decl(size_t i);
 
     virtual antlrcpp::Any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
    
