@@ -1,5 +1,7 @@
-Decl=1
-Type=2
-Name=3
-DefFun=4
-'void main(){}'=4
+T__0=1
+Decl=2
+Type=3
+Name=4
+DefFun=5
+'\n'=1
+'void main(){}'=5

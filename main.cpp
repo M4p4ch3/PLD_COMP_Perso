@@ -11,9 +11,23 @@
 using namespace antlr4;
 using namespace std;
 
-int main(int, const char **) 
+int main(int, const char **)
 {
-	ANTLRInputStream input("int n1;char M2;void main(){}");
+	char * fileContent;
+	long fileSize;
+
+	FILE * file = fopen("Prog", "rb");
+
+	fseek(file, 0, SEEK_END);
+	fileSize = ftell(file);
+	rewind(file);
+
+	fileContent = (char *) malloc(fileSize * (sizeof(char)));
+	fread(fileContent, sizeof(char), fileSize, file);
+
+	fclose(file);
+
+	ANTLRInputStream input(fileContent);
 	ProgLexer lexer(&input);
 	CommonTokenStream tokens(&lexer);
 	ProgParser parser(&tokens);

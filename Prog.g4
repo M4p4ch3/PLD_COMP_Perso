@@ -1,6 +1,6 @@
 grammar Prog;
 
-prog: Decl* DefFun;
+prog: Decl* DefFun '\n';
 
 Decl : Type ' ' Name ';';
 
