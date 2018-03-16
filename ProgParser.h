@@ -12,11 +12,11 @@
 class  ProgParser : public antlr4::Parser {
 public:
   enum {
-    T__0 = 1, Decl = 2, Type = 3, Name = 4, DefFun = 5
+    T__0 = 1, T__1 = 2, T__2 = 3, Type = 4, Name = 5, DefFun = 6
   };
 
   enum {
-    RuleProg = 0
+    RuleProg = 0, RuleDecl = 1
   };
 
   ProgParser(antlr4::TokenStream *input);
@@ -29,21 +29,35 @@ public:
   virtual antlr4::dfa::Vocabulary& getVocabulary() const override;
 
 
-  class ProgContext; 
+  class ProgContext;
+  class DeclContext; 
 
   class  ProgContext : public antlr4::ParserRuleContext {
   public:
     ProgContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     antlr4::tree::TerminalNode *DefFun();
-    std::vector<antlr4::tree::TerminalNode *> Decl();
-    antlr4::tree::TerminalNode* Decl(size_t i);
+    std::vector<DeclContext *> decl();
+    DeclContext* decl(size_t i);
 
     virtual antlrcpp::Any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
    
   };
 
   ProgContext* prog();
+
+  class  DeclContext : public antlr4::ParserRuleContext {
+  public:
+    DeclContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+    virtual size_t getRuleIndex() const override;
+    antlr4::tree::TerminalNode *Type();
+    antlr4::tree::TerminalNode *Name();
+
+    virtual antlrcpp::Any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+   
+  };
+
+  DeclContext* decl();
 
 
 private:

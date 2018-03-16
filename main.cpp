@@ -22,8 +22,10 @@ int main(int, const char **)
 	fileSize = ftell(file);
 	rewind(file);
 
-	fileContent = (char *) malloc(fileSize * (sizeof(char)));
+	fileContent = (char *) malloc((fileSize + 1) * (sizeof(char)));
 	fread(fileContent, sizeof(char), fileSize, file);
+
+	fileContent[fileSize] = '\0';
 
 	fclose(file);
 

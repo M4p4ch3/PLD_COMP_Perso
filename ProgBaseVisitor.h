@@ -19,6 +19,10 @@ public:
     return visitChildren(ctx);
   }
 
+  virtual antlrcpp::Any visitDecl(ProgParser::DeclContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
 
 };
 

@@ -1,7 +1,10 @@
 T__0=1
-Decl=2
-Type=3
-Name=4
-DefFun=5
+T__1=2
+T__2=3
+Type=4
+Name=5
+DefFun=6
 '\n'=1
-'void main(){}'=5
+' '=2
+';'=3
+'void main(){}'=6

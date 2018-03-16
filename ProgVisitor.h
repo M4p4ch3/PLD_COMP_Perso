@@ -21,6 +21,8 @@ public:
    */
     virtual antlrcpp::Any visitProg(ProgParser::ProgContext *context) = 0;
 
+    virtual antlrcpp::Any visitDecl(ProgParser::DeclContext *context) = 0;
+
 
 };
 

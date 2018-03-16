@@ -1,12 +1,12 @@
 grammar Prog;
 
-prog: Decl* DefFun '\n';
+prog: decl* DefFun '\n';
 
-Decl : Type ' ' Name ';';
+decl : Type ' ' Name ';';
 
 Type : 'int'
      | 'char';
 
-Name : [a-zA-Z][a-zA-Z0-9]+; 
+Name : [a-zA-Z][a-zA-Z0-9]*; 
 
 DefFun : 'void main(){}';
