@@ -19,7 +19,33 @@ public:
   /**
    * Visit parse trees produced by ProgParser.
    */
-    virtual antlrcpp::Any visitProg(ProgParser::ProgContext *context) = 0;
+    virtual antlrcpp::Any visitLprog(ProgParser::LprogContext *context) = 0;
+
+    virtual antlrcpp::Any visitLfun(ProgParser::LfunContext *context) = 0;
+
+    virtual antlrcpp::Any visitLparamsVoid(ProgParser::LparamsVoidContext *context) = 0;
+
+    virtual antlrcpp::Any visitLparams(ProgParser::LparamsContext *context) = 0;
+
+    virtual antlrcpp::Any visitLparamsEpsilon(ProgParser::LparamsEpsilonContext *context) = 0;
+
+    virtual antlrcpp::Any visitLparam(ProgParser::LparamContext *context) = 0;
+
+    virtual antlrcpp::Any visitLbloc(ProgParser::LblocContext *context) = 0;
+
+    virtual antlrcpp::Any visitLinstrDecl(ProgParser::LinstrDeclContext *context) = 0;
+
+    virtual antlrcpp::Any visitLtyperetourVoid(ProgParser::LtyperetourVoidContext *context) = 0;
+
+    virtual antlrcpp::Any visitLtype(ProgParser::LtypeContext *context) = 0;
+
+    virtual antlrcpp::Any visitLchar(ProgParser::LcharContext *context) = 0;
+
+    virtual antlrcpp::Any visitLint32_t(ProgParser::Lint32_tContext *context) = 0;
+
+    virtual antlrcpp::Any visitLint64_t(ProgParser::Lint64_tContext *context) = 0;
+
+    virtual antlrcpp::Any visitLdecl(ProgParser::LdeclContext *context) = 0;
 
 
 };

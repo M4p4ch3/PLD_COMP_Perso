@@ -150,6 +150,9 @@ file(REMOVE_RECURSE
   "../../dist/libantlr4-runtime.pdb"
   "../../dist/libantlr4-runtime.so"
   "../../dist/libantlr4-runtime.so.4.7.1"
+  "../../dist/libantlr4-runtime.pdb"
+  "CMakeFiles/CMakeRelink.dir/libantlr4-runtime.so"
+  "CMakeFiles/CMakeRelink.dir/libantlr4-runtime.so.4.7.1"
 )
 
 # Per-language clean rules from dependency scanning.

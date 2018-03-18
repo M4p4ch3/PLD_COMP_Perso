@@ -1,4 +1,4 @@
-# Install script for directory: /home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/runtime
+# Install script for directory: /home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/runtime
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,39 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libantlr4-runtime.so.4.7.1"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libantlr4-runtime.so"
-      )
-    if(EXISTS "${file}" AND
-       NOT IS_SYMLINK "${file}")
-      file(RPATH_CHECK
-           FILE "${file}"
-           RPATH "")
-    endif()
-  endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/dist/libantlr4-runtime.so.4.7.1"
-    "/home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/dist/libantlr4-runtime.so"
+    "/home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/build/runtime/CMakeFiles/CMakeRelink.dir/libantlr4-runtime.so.4.7.1"
+    "/home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/build/runtime/CMakeFiles/CMakeRelink.dir/libantlr4-runtime.so"
     )
-  foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libantlr4-runtime.so.4.7.1"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libantlr4-runtime.so"
-      )
-    if(EXISTS "${file}" AND
-       NOT IS_SYMLINK "${file}")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/usr/bin/strip" "${file}")
-      endif()
-    endif()
-  endforeach()
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/dist/libantlr4-runtime.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/dist/libantlr4-runtime.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/antlr4-runtime" TYPE DIRECTORY FILES "/home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/runtime/src/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/antlr4-runtime" TYPE DIRECTORY FILES "/home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/runtime/src/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 

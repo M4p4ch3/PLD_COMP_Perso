@@ -1,4 +1,4 @@
-# Install script for directory: /home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source
+# Install script for directory: /home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,14 +34,14 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/libantlr4" TYPE FILE FILES
-    "/home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/README.md"
-    "/home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/VERSION"
+    "/home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/README.md"
+    "/home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/VERSION"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/build/runtime/cmake_install.cmake")
+  include("/home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/build/runtime/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pache/Documents/INSA/IF/4/PLD/COMP/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pache/INSA/IF/4/PLD/PLD_COMP_Perso/antlr4-cpp-runtime-4.7.1-source/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

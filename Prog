@@ -1,1 +1,1 @@
-int number1;int number2;void main(){}
+char number1;char number2;void main(){char a;char b;}
